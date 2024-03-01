@@ -1,0 +1,165 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c7f9cc;
+  }
+  .heading {
+      color: #22577a;
+      margin: 0;
+  }
+  .pricing-plan-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+  }
+  .pricing-plan {
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #293241;
+    margin: 15px;
+  }
+  .pricing-plan:hover {
+      transform: scale(1.10);
+      cursor: pointer;
+      transition: ease-in-out(0.7, 0.2, 0.8, 1);
+  }
+  .pricing-plan__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: #22577a;
+    color: #00f5d4;
+  }
+  .pricing-plan--highlighted {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+  }
+  .pricing-plan__special-text {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ccdbdc;
+    background: #007ea7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+  }
+  .pricing-plan__title,
+  .pricing-plan__summary {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .pricing-plan__title {
+    font-size: 1.5em;
+  }
+  .pricing-plan__summary {
+    margin-top: 5px;
+    font-size: 2.5em;
+    color: #cbf3f0;
+  }
+  .pricing-plan__text {
+    font-size: 0.7em;
+    text-align: center;
+    margin: 0 0 5px 0;
+  }
+  .pricing-plan__summarytext {
+    font-size: 0.7em;
+    text-align: center;
+    cursor: pointer;
+  }
+  .pricing-plan__description {
+    padding: 25px;
+    background-color: #90e0ef;
+  }
+  .pricing-plan__list {
+    padding: 0;
+    margin: 0;
+  }
+  .pricing-plan__feature {
+    list-style: none;
+    margin: 0;
+    padding-left: 25px;
+    position: relative;
+    font-size: 0.9em;
+  }
+  .pricing-plan__feature:not(:last-child) {
+    margin-bottom: 0.5em;
+  }
+  .pricing-plan__feature.enable::before {
+    content: "\2714";
+    color: #009578;
+    left: 0;
+    position: absolute;
+  }
+  .pricing-plan__feature.disable::before {
+    content: "\2717";
+    color: #dc143c;
+    left: 0;
+    position: absolute;
+  }
+  .pricing-plan__button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 30px;
+    text-decoration: none;
+    color: #003249;
+    background: #ccdbdc;
+    border-radius: 10px;
+    border: 1px solid #ccdbdc;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .pricing-plan__button:hover {
+    background: #003249;
+    color: #ccdbdc;
+    transform: scale(1.05);
+    transition: ease-in-out;
+  }
+  @media only screen and (max-width: 2000px) {
+      .pricing-plan-container{
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          padding-top: 20px;
+      }
+  }
+  
+  @media only screen and (max-width: 942px) {
+      .pricing-plan-container{
+          display: flex;
+          flex-direction: column;
+      }
+      .pricing-plan {
+          width: 400px;
+          margin-bottom: 30px;
+      }
+      .pricing-plan__description {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+  }
+  @media only screen and (max-width: 664px) {
+      .heading {
+          text-align: center;
+      }
+  }
+  
+  @media only screen and (max-width: 480px) {
+      .pricing-plan {
+          width: 300px;
+      }
+  }
